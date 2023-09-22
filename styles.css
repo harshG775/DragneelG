@@ -17,7 +17,7 @@
 .about {}
 /* ////////////// */
 .about .backdrop {
-    height: 400px;
+    height: 450px;
     background-size: cover;
     background-position: right center;
     box-shadow: inset 0px -50px 30px -20px #11111181;
@@ -29,7 +29,7 @@
     align-items: flex-end;
     
     position: relative;
-    top: 4rem;
+    top: 6rem;
 }
 .backdrop-inner .poster {
     width: 280px;
@@ -90,9 +90,8 @@ ul {
     list-style: none;
 }
 .about .info {
-    margin-top:9rem;
+    margin-top:8rem;
 
-    padding: 1rem;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -109,7 +108,8 @@ ul {
     align-items: flex-end;
 }
 .left .about p{
-    color: hwb(0 93% 7% / 0.70);
+    font-size: 1.4rem;
+    color: hwb(0 93% 7% / 0.850);
     max-width: 35rem; 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -133,6 +133,8 @@ ul {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 0.5rem;
+    align-items: center;
+    color: rgba(238, 238, 238, 0.70);
     
 }
 .ratings-container {
@@ -167,5 +169,8 @@ ul {
     .about .info {
         flex-direction: column;
         justify-content: center;
+    }
+    .left .title h1{
+        text-align: center;
     }
 }
