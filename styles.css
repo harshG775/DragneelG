@@ -36,7 +36,8 @@
 }
 
 .backdrop-inner .action-buttons {
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
+    margin-left: auto;
     display: flex;
     margin-top: auto;
     justify-content: center;
@@ -46,7 +47,7 @@
 .action-buttons span {
     display: inline-block;
     cursor: pointer;
-    background-color: #222;
+    background-color: #333;
     color: #eee;
     flex-shrink: 0;
     border: 1px solid #eee;
@@ -63,7 +64,7 @@
 }
 .action-buttons span:hover {
     background-color: #eee;
-    color: #222;
+    color: #333;
 }
 .action-buttons span:nth-child(1):hover {
     background-color: #ff3327;
@@ -78,6 +79,9 @@
     .backdrop-inner .poster {
         transition: margin 0.3s;
         margin-bottom: 1rem;
+    }
+    .backdrop-inner .action-buttons {
+        margin-left: unset;
     }
 }
 /* /////////////////////// */
@@ -110,21 +114,55 @@ ul {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
     -webkit-box-orient: vertical;
 }
-.left .about span {
-    cursor: pointer;
-}
-
 
 
 
 
 .info .right {
+    border: 2px solid #333;
+    padding: 1rem;
+    border-radius: 1rem;
+    
     flex: 1;
 }
+.right ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 0.5rem;
+    
+}
+.ratings-container {
+    padding: 2rem 0 0 0;
+}
+.ratings-container .ratings {
+    display: flex;
+    justify-content: space-between;
+}
+.ratings-container .ratings .fa-star{
+    color: rgb(255, 196, 0);
+}
+.ratings-container .rating {
+    margin-top: 0.5rem;
+    background-color: #111;
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+.rating .fa-star:hover {
+    cursor: pointer;
+
+}
+
+
+
+
 @media (max-width: 768px) {
     .about .info {
         flex-direction: column;
