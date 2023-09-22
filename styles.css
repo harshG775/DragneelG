@@ -15,26 +15,25 @@
 
 /* .about */
 .about {}
-
 /* ////////////// */
 .about .backdrop {
     height: 400px;
     background-size: cover;
     background-position: right center;
-    /* box-shadow: inset 0px -50px 30px -20px #11111181; */
+    box-shadow: inset 0px -50px 30px -20px #11111181;
 }
 .backdrop .backdrop-inner {
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     
     position: relative;
     top: 4rem;
-    padding: 0 1rem;
-
+    margin: 0 4rem;
 }
 .backdrop-inner .poster {
-    width: 300px;
+    width: 280px;
 }
 
 .backdrop-inner .action-buttons {
@@ -73,6 +72,10 @@
     .backdrop .backdrop-inner {
         align-items: center;
         flex-direction: column;
+    }
+    .backdrop-inner .poster {
+        transition: margin 0.3s;
+        margin-bottom: 1rem;
     }
 }
 
