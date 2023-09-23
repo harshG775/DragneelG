@@ -224,6 +224,13 @@ section.comments > div:nth-child(2) {
 section.streaming {
     
 }
+.player-container iframe{
+    /* all: unset !important; */
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 0.5rem;
+}
+
 /* /////////////////////////////// section */
 section.seasons {
     
