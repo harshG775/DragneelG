@@ -4,13 +4,16 @@
     color: #eee;
     background-color: #222;
 }
+ul {
+    list-style: none;
+}
 /* / */
+
 section.info,
 section.streaming,
 section.seasons,
 section.comments {
     display: flex;
-    padding: 0 1rem;
     gap: 1rem;
 }
 section.info,
@@ -116,12 +119,9 @@ section.comments > div:nth-child(2) {
         margin-left: unset;
     }
 }
-/* /////////////////////// */
-/* .about info */
-ul {
-    list-style: none;
-}
-.about .info {
+
+/* /////////////////////////////// section */
+ .info {
     margin-top:8rem;
 
     display: flex;
@@ -209,9 +209,26 @@ ul {
     .left .overview p{
         max-width: unset; 
     }
+
+
+
+    /*  */
+    section.info,
+    section.streaming,
+    section.seasons,
+    section.comments {
+        padding: 0 1rem;
+    }
 }
-/* /////////////////////////////// */
+/* /////////////////////////////// section */
+section.streaming {
+    
+}
+/* /////////////////////////////// section */
+section.seasons {
+    
+}
+/* /////////////////////////////// section */
+section.comments {
 
-
-/* @media (max-width: 768px) { */
-
+}
