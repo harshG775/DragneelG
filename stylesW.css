@@ -1,38 +1,66 @@
-/* CSS Snippet */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* container */
 .maxContainer {
     margin: auto;
     max-width: 1400px;
     transition: max-width 0.1s;
 }
+
 h1 {
-    font-size: 3rem;
+    font-size: 48px;
 }
+
 h2 {
-    font-size: 2.6rem;
+    font-size: 44px;
 }
+
 h3 {
-    font-size: 2.3rem;
+    font-size: 40px;
 }
+
 h4 {
-    font-size: 2.1rem;
+    font-size: 36px;
 }
+
 h5 {
-    font-size: 2rem;
+    font-size: 32px;
 }
+
 h6 {
-    font-size: 1.9rem;
+    font-size: 28px;
 }
 
 @media (max-width: 1400px) {
     .maxContainer {
         max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 20px;
     }
 }
 
@@ -40,71 +68,44 @@ h6 {
     .maxContainer {
         max-width: 992px;
     }
-    h1 {
-        font-size: 2.75rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 2.25rem;
-    }
-    h4 {
-        font-size: 2rem;
-    }
-    h5 {
-        font-size: 1.75rem;
-    }
-    h6 {
-        font-size: 1.5rem;
-    }
+    /* Adjust font sizes for this range as needed */
 }
 
 @media (max-width: 992px) {
     .maxContainer {
         max-width: 768px;
     }
-    h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.75rem;
-    }
-    h4 {
-        font-size: 1.5rem;
-    }
-    h5 {
-        font-size: 1.25rem;
-    }
-    h6 {
-        font-size: 1rem;
-    }
+
+    /* Adjust font sizes for this range as needed */
 }
 
 @media (max-width: 768px) {
     .maxContainer {
         max-width: 576px;
     }
+
     h1 {
-        font-size: 2rem;
+        font-size: 36px;
     }
+
     h2 {
-        font-size: 1.6rem;
+        font-size: 32px;
     }
+
     h3 {
-        font-size: 1.3rem;
+        font-size: 28px;
     }
+
     h4 {
-        font-size: 1.1rem;
+        font-size: 24px;
     }
+
     h5 {
-        font-size: 1rem;
+        font-size: 20px;
     }
+
     h6 {
-        font-size: 0.9rem;
+        font-size: 16px;
     }
 }
 
@@ -112,4 +113,6 @@ h6 {
     .maxContainer {
         max-width: unset;
     }
+
+    /* Adjust font sizes for this range as needed */
 }
