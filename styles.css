@@ -136,7 +136,7 @@ section.comments > div:nth-child(2) {
     padding: 1rem 0;
 }
 .left .overview p{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     /* max-width: 35rem;  */
     color: hwb(0 93% 7% / 0.850);
     overflow: hidden;
@@ -230,6 +230,59 @@ section.streaming {
     aspect-ratio: 16/9;
     border-radius: 0.5rem;
 }
+.player-container .airing-time {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: #333;
+    border-radius:0.5rem;
+}
+.player-container {
+
+}
+.episodes-container .episodes{
+
+    --sb-track-color: #122;
+    --sb-thumb-color: #ff3327;
+    --sb-size: 8px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    overflow-y: scroll;
+    max-height: 10rem;
+
+    margin: 1rem 0;
+    outline: 10px solid #111;
+    outline-offset: 2px;
+    border-radius: 1px;
+}
+
+.episodes::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+.episodes::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+}
+
+.episodes::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
+}
+
+.episode {
+    background-color: #333;
+    padding: 0.5rem;
+}
+.episode:nth-child(even) {
+    background-color: #111;
+}
+
+
+
+
+
 
 /* /////////////////////////////// section */
 section.seasons {
