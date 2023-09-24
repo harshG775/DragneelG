@@ -183,8 +183,8 @@ section.comments > div:nth-child(2) {
 .ratings-container .rating {
     margin-top: 0.5rem;
     background-color: #111;
-    padding: 1rem 0.5rem;
-    font-size: 2rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
 
     display: flex;
     justify-content: space-evenly;
@@ -192,7 +192,7 @@ section.comments > div:nth-child(2) {
 }
 .rating .fa-star:hover {
     cursor: pointer;
-
+    color: rgb(255, 196, 0);
 }
 
 
@@ -249,12 +249,12 @@ section.streaming {
 
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     overflow-y: scroll;
-    max-height: 10rem;
+    max-height: 15rem;
 
+    padding: 5px 0;
     margin: 1rem 0;
-    outline: 10px solid #111;
-    outline-offset: 2px;
-    border-radius: 1px;
+    border: 10px solid #111;
+    border-radius: 5px;
 }
 
 .episodes::-webkit-scrollbar {
@@ -274,11 +274,19 @@ section.streaming {
 .episode {
     background-color: #333;
     padding: 0.5rem;
+    border-radius: 5px;
 }
 .episode:nth-child(even) {
+    background-color: #222;
+}
+.episode:hover {
     background-color: #111;
 }
 
+
+.recommended {
+
+}
 
 
 
