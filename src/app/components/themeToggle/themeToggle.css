@@ -1,0 +1,51 @@
+:root {
+    --primary_color: #FF5733;           /* Fire Red */
+    --background_color: #141519;        /* Dark Gray Background */
+    --background_color_lighter: #202128;
+    --text_color: #CCCCCC;              /* Light Gray Text */
+    --accent_color: #FF8C66;            /* Subtle Gradient Accent */
+    --complementary_color: #4CAF50;     /* Complementary Green */
+    --neon_color: #00BFFF;              /* Neon Blue */
+    --secondary_color: #303F9F;         /* Secondary Blue */
+
+    --initial_font: 'Roboto', sans-serif;
+    --global_font: 'Roboto', sans-serif;
+    --header_font: 'Montserrat', sans-serif;
+    --main_content_font: 'Lato', sans-serif;
+    --accent_font: 'Poppins', sans-serif;
+    --emphasis_font: 'Exo', sans-serif;
+
+    color-scheme: dark;
+    background-color: var(--background_color);
+    color: var(--text_color);
+    
+}
+
+.light-mode {
+    --primary_color: #FF5733;           /* Fire Red */
+    --background_color: #FFFFFF;        /* White Background */
+    --background_color_lighter: #eee;
+    --text_color: #4B4453;              /* Dark Gray Text */
+    --accent_color: #FF8C66;            /* Subtle Gradient Accent */
+    --complementary_color: #4CAF50;     /* Complementary Green */
+    --neon_color: #00BFFF;              /* Neon Blue */
+    
+    --light_mode_font: 'Montserrat', sans-serif;
+    --global_font: 'Roboto', sans-serif;
+    --header_font: 'Montserrat', sans-serif;
+    --main_content_font: 'Lato', sans-serif;
+    --accent_font: 'Poppins', sans-serif;
+    --emphasis_font: 'Exo', sans-serif;
+
+    color-scheme: light;
+    background-color: var(--background_color);
+    color: var(--text_color);
+}
+
+body {
+    font-family: var(--initial_font);
+}
+
+.light-mode {
+    font-family: var(--light_mode_font);
+}
