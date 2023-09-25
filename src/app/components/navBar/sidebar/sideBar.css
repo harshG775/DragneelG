@@ -43,9 +43,7 @@ ul {
     font-size: 1.3rem;
     height: 100%;
 }
-.side-toggle-btn {
-    
-}
+
 .side-navbar .nav-links a {
     white-space: nowrap;
     display: flex;
@@ -106,5 +104,8 @@ ul {
     }
     .side-navbar .nav-links a i {
         width: unset;
+    }
+    .side-toggle-btn {
+        display: none;
     }
 }
