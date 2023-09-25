@@ -1,31 +1,16 @@
-import "./page.module.css"
-export default function Home() {
-    return (
-      <div>
-        
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>bottom</h1>
-
+import "./page.module.css";
+import { TMDB } from "@/modules/fetching";
+export default async function Home() {
+    const resp = await TMDB.getAllTrendingPage(1,"day")
+    console.log(resp)
     
-      </div>
-    )
+	return (
+		<div>
+            <h1>    
+                data.results[0].original_title
+            </h1>
+
+			<h1>bottom</h1>
+		</div>
+	);
 }
