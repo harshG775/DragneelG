@@ -11,8 +11,8 @@ const options = {
             "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMDRjNGQ1ODhlYTA0ZTE1NDI4NDllNWIwM2ZlYWRjOSIsInN1YiI6IjYyMzg2NDQ2OWVlMGVmMDA0NmRhNTA0NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dA1jUv8T1T3u9rACdp3RAvs7FnAWVYM7HTDbIvqEmqg",
     },
 };
-
-`https://api.themoviedb.org/3/search/multi?api_key=c04c4d588ea04e1542849e5b03feadc9&page=1&query=thor`
+// `https://api.themoviedb.org/3/trending/tv/day?api_key=c04c4d588ea04e1542849e5b03feadc9&page=1`
+// `https://api.themoviedb.org/3/search/multi?api_key=c04c4d588ea04e1542849e5b03feadc9&page=1&query=thor`
 //////////////////////////////////
 export const TMDB = {
         getAllTrendingPage: async function (pageNumb = 1, time = "day") {
@@ -24,10 +24,10 @@ export const TMDB = {
             const url = `${basUrl}/trending/${contentType}/${time}?api_key=${apiKey}&page=${pageNumb}`;
             return await myFetch(url, options);
         },
-        getPopularPage: async function (contentType, pageNumb = 1) {
-            const url = `${basUrl}/${contentType}/popular?api_key=${apiKey}&page=${pageNumb}`;
-            return await myFetch(url, options);
-        },
+        // getPopularPage: async function (contentType, pageNumb = 1) {
+        //     const url = `${basUrl}/${contentType}/popular?api_key=${apiKey}&page=${pageNumb}`;
+        //     return await myFetch(url, options);
+        // },
         getTopRatedPage: async function (contentType, pageNumb = 1) {
             const url = `${basUrl}/${contentType}/top_rated/?api_key=${apiKey}&page=${pageNumb}`;
             return await myFetch(url, options);
