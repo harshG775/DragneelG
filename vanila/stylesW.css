@@ -25,7 +25,7 @@ h6 {
 .maxContainer {
     margin: auto;
     max-width: 1400px;
-    /* transition: max-width 0.5s; */
+    transition: max-width 0.2s;
 }
 @media (max-width: 1400px) {
     .maxContainer {

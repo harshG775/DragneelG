@@ -1,0 +1,124 @@
+:root {
+    /* temp */
+    --primary_clr: #ff5833;
+    
+    --bg_clr1: #111111;
+    --bg_clr2: #222222;
+    --bg_clr3: #333333;
+    --bg_clr4: #444444;
+    --bg_clr5: #555555;
+
+    --txt_clr1: #ffffff;
+    --txt_clr2: #eeeeee;
+    --txt_clr3: #dddddd;
+    --txt_clr4: #cccccc;
+    --txt_clr4: #bbbbbb;
+    --txt_clr5: #aaaaaa;
+    /* temp */
+}
+
+/* side-navbar */
+
+.side-navbar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    display: flex;
+    background-color: var(--bg_clr2);
+    box-shadow: 0 0 2px 0 var(--bg_clr5);
+
+    pointer-events: all;
+    overflow: hidden;
+
+    position: absolute;
+    height: 100%;
+
+}
+
+.side-navbar .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.3rem;
+    height: 100%;
+}
+
+.side-navbar .nav-links a {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem 0.5rem;
+    color: var(--primary_color);
+
+    transition: background-color 0.2s;
+}
+.side-navbar .nav-links a:hover {
+    background-color: var(--bg_clr5);
+}
+.side-navbar .nav-links a i {
+    display: inline-block;
+    width: 3rem;
+}
+
+/* user */
+.side-navbar .nav-links .user {
+    margin-top: auto;
+}
+
+/*  */
+@media (min-width: 577px) {
+    .side-navbar {
+        width: 4rem;
+        /* padding-top: 3rem; */
+        transition: width 0.2s;
+    }
+    .side-navbar:hover {
+        width: 11rem;
+    }
+
+
+    .nav-logo a {
+        background-color: var(--bg_clr1);
+    }
+    .nav-logo i{
+        background-color: var(--bg_clr1);
+        position:absolute;
+        top: 0.5rem;
+        right: -0.5rem;
+        font-size: 1.5rem; 
+    }
+    .side-navbar .nav-links .nav-logo a:hover {
+        background-color: var(--bg_clr1);
+    }
+}
+
+/*  */
+
+@media (max-width: 576px) {
+
+    .side-navbar {
+        overflow: unset;
+        padding-top: unset;
+        height: unset;
+
+        position: fixed;
+        inset: auto 0 0 0;
+    }
+
+    .side-navbar .nav-links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0rem 10vw 0rem;
+        align-items: center;
+    }
+    .side-navbar .nav-links a span:nth-child(2) {
+        display: none;
+    }
+    .side-navbar .nav-links a i {
+        width: unset;
+    }
+    .nav-logo {
+        display: none;
+    }
+}

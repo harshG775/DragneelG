@@ -9,17 +9,21 @@ export const metadata = {
 };
 
 // import SideNavBar from "./components/navBar/sidebar/SideBar";
+import SideNavbar from "@/components/sideNavbar/SideNavbar";
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<Head>
-	            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 				<link rel="icon" href="/favicon.ico"></link>
 			</Head>
-			<body className={inter.className}>
-                {/* <SideNavBar/> */}
+			<body className={inter.className} data-theme>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+				
                 <main id="root">{children}</main>
+                <SideNavbar/>
             </body>
+			
 		</html>
 	);
 }
